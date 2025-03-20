@@ -7,33 +7,29 @@ public class Main {
         //(4) chá de ervas
     
     Scanner sc = new Scanner(System.in);
-    int T;
-    System.out.println("Escolha o tipo de chá: ");
-    System.out.println("1 - Chá branco");
-    System.out.println("2 - Chá verde");
-    System.out.println("3 - Chá preto");
-    System.out.println("4 - Chá de ervas");
-    
-    T= sc.nextInt();
-    switch(T){
-        case 1:
-        System.out.println("Chá branco");
-        break;
-        case 2:
-        System.out.println("Chá verde");
-        break;
-        case 3:
-        System.out.println("Chá preto");
-        break;
-        case 4:
-        System.out.println("Chá de ervas");
-        break;
-        default:
-        System.out.println("Opção inválida");
-        break;
-    }
+    int Resposta= sc.nextInt();
+    int Acertos=0;
+    int RespostaA= sc.nextInt();
+    int RespostaB= sc.nextInt();
+    int RespostaC= sc.nextInt();
+    int RespostaD= sc.nextInt();
+    int RespostaE= sc.nextInt();
 
-    
-    }
-
-}
+        if (Resposta==RespostaA) {   
+            Acertos+=1;
+        }
+        if (Resposta==RespostaB) {   
+            Acertos+=1;
+        }
+        if (Resposta==RespostaC) {   
+            Acertos+=1;
+        }
+        if (Resposta==RespostaD) {   
+            Acertos+=1;
+        }
+        if (Resposta==RespostaE) {
+            Acertos+=1;
+        }
+            System.out.printf("%d\n",Acertos);
+        }
+    }    
